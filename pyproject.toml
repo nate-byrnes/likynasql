@@ -1,7 +1,17 @@
 [project]
 name = "likynasql"
 version = "0.1.0"
-description = "Add your description here"
+description = "Simple Python database abstraction layer for SQLite3 and Postgresql"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "apsw>=3.50.1.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.4.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
