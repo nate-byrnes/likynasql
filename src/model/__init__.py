@@ -29,11 +29,3 @@ from .metric import Metric  # noqa: F401
 from .selector import Selector  # noqa: F401
 from .setting import Setting # noqa: F401
 from .threshold import Threshold  # noqa: F401
-
-
-def class_from_name(name):
-    lst = globals()
-    if name.capitalize() in lst:
-        return globals()[name.capitalize()]
-    else:
-        raise Exception(f"{name} is unknown")
