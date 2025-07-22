@@ -57,4 +57,5 @@ def test_select_some():
     from SQL import query
     res = get_some()
     assert res == 10
+    
 
