@@ -168,3 +168,6 @@ def create_export(destfname):
             cls = getattr(mod, tname.capitalize())
             cls.export_to_sql(f)
         f.write("COMMIT;")
+
+
+
