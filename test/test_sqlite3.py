@@ -1,4 +1,4 @@
-#update, delete
+#update, delete, insert
 
 def get_size():
     from SQL import query
